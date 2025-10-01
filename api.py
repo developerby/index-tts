@@ -129,7 +129,7 @@ class TTSStreamer:
                     await websocket.send_json({
                         "type": "response.audio.delta",
                         "response_id": request_id,
-                        "request_id_id": request_id,
+                        "request_id": request_id,
                         "item_id": "item_001",
                         "output_index": 0,
                         "content_index": 0,
@@ -141,7 +141,7 @@ class TTSStreamer:
                 await websocket.send_json({
                     "type": "response.audio.done",
                     "response_id": request_id,
-                    "request_id_id": request_id,
+                    "request_id": request_id,
                     "item_id": "item_001", 
                     "output_index": 0,
                     "content_index": 0
